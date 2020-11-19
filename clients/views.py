@@ -69,3 +69,5 @@ def delete_client(request, pk):
     client = get_object_or_404(ClientUsers, pk=pk)
     client.delete()
     return redirect('home')
+
+
