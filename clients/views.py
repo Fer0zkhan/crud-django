@@ -60,7 +60,7 @@ def edit_client(request, pk):
     context = {
         'title': 'Edit User',
         'form': form,
-        'client_dashBoard_url': reverse('home')
+        'dashBoard_url': reverse('home')
     }
     return render(request, 'add-edit-form.html', context)
 
