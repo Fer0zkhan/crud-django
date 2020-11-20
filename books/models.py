@@ -8,7 +8,7 @@ from django.urls import reverse
 class BookModel(models.Model):
     book_name = models.CharField(max_length=20, blank=False, null=False)
     author_name = models.CharField(max_length=20, blank=False, null=False)
-    book_discription = models.TextField(max_length=100, blank=False, null=False)
+    book_discription = models.TextField(max_length=200, blank=False, null=False)
 
     publish_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
